@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Practica2</title>
+	<meta name="autor" content="183755">
+	<link rel="icon" type="images/jfif" href="images/log.jfif">
+    <style type="text/css">
+        td{
+			background-color: rgb(0, 0, 0);
+		}
+    </style>
+    <style>
+        table {
+            width: 75%;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+        td img {
+            width: 100px;
+            height: 100px;
+        }
+        #imagenAmpliada {
+            width: 25%;
+            height: 25%; 
+            display: block;
+            margin: 20px auto;
+            object-fit: cover; 
+        }
+    </style>
+    <script>
+        function mostrarImagen(src) {
+            document.getElementById('imagenAmpliada').src = src;
+        }
+    </script>
+
+</head>
+<body background="espacio.avif" style="background-repeat: no-repeat; background-size: 100%; background-attachment: fixed;">
+
+    <table align="center" style="border: 1px solid rgb(4, 4, 4);">
+        <caption align="center" style="border: 1px solid rgb(3, 3, 3); background-color:rgb(170, 39, 100);"><strong> SISTEMA SOLAR </strong></caption>
+
+        <tr>
+            <td align="center"><img src="marte.jfif" onclick="mostrarImagen('marte.jfif')"></td>
+            <td align="center"><img src="saturno.jpg" onclick="mostrarImagen('saturno.jpg')"></td>
+            <td align="center"> <img src="tierra.webp" onclick="mostrarImagen('tierra.webp')"></td>
+            <td align="center"><img src="jupiter.jpg" onclick="mostrarImagen('jupiter.jpg')"></td>
+        </tr>
+        <tfoot>
+            <tr>
+                <td colspan="4" rowspan="4" > <iframe id="imagenAmpliada"></iframe> </td>
+            </tr>
+        </tfoot>
+        
+    </table>
+
+</body>
+</html>
