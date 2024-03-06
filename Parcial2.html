@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Venta en línea</title>
+</head>
+<body>
+    <header>
+        <h1 align="center">Venta en línea</h1>
+    </header>
+    <form method="post" action="" enctype="text/plain">
+        <fieldset>
+            <legend>Información general</legend>
+            <table>
+                <tr>
+                    <td>
+                        <label for="name">Nombre:</label><br/>
+                        <input type="text" name="nombre" maxlength="25" placeholder="Nombre" title="Nombre" required>
+                    </td>
+                    <td>
+                        <label for="apellido_p">Apellido paterno:</label><br/>
+                        <input type="text" name="app" maxlength="25" placeholder="Apellido paterno" title="Apellido paterno">
+                    </td>
+                    <td>
+                        <label for="apellido_m">Apellido materno:</label><br/>
+                        <input type="text" name="apm" maxlength="25" placeholder="Apellido materno" title="Apellido materno">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="username">Nombre de usuario:</label><br/>
+                        <input type="text" name="username" maxlength="25" placeholder="Nombre de usuario" title="Nombre de usuario" required>
+                    </td>
+                    <td>
+                        <label for="pass">Contraseña:</label><br/>
+                        <input type="password" name="pass" id="pass" maxlength="25" size="15" placeholder="Contraseña" title="Contraseña" required>
+                    </td>
+                    <td>
+                        <label for="date">Fecha de nacimiento:</label><br/>
+                        <input type="date" name="fecha" id="fecha">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Datos de facturación</legend>
+            <table>
+                <tr>
+                    <td>
+                        <label for="pais">País:</label><br/>
+                        <select name="pais" id="pais" multiple required>
+                            <option>México</option>
+                            <option>Canadá</option>
+                            <option>EE.UU.</option>
+                            <option>Brasil</option>
+                            <option>Colombia</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label for="ciudad">Ciudad:</label><br/>
+                        <select name="ciudad" id="ciudad" multiple required>
+                            <option>San Luis Potosí</option>
+                            <option>Matehuala</option>
+                            <option>Cd. Valles</option>
+                            <option>Ahualulco</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label for="calle">Calle:</label><br/>
+                        <input type="text" name="calle" maxlength="25" placeholder="Calle" title="Calle">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="num_casa">Número de casa:</label><br/>
+                        <input type="number" name="num_casa" placeholder="Número exterior" title="Número exterior">
+                    </td>
+                    <td>
+                        <label for="colonia">Colonia:</label><br/>
+                        <input type="text" name="colonia" maxlength="25" placeholder="Colonia" title="Colonia">
+                    </td>
+                    <td>
+                        <label for="email">Email:</label><br/>
+                        <input type="email" name="email" placeholder="Email" title="Email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="rfc">RFC:</label><br/>
+                        <input type="text" name="rfc" maxlength="13" placeholder="RFC" title="RFC">
+                    </td>
+                    <td>
+                        <label for="cp">C.P:</label><br/>
+                        <input type="number" name="cp" placeholder="Código postal" title="Código postal">
+                    </td>
+                    <td>
+                        <input type="submit" name="envio" id="envio" value="Enviar">
+                        <input type="reset" name="borrar" value="Restablecer" id="borrar">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
