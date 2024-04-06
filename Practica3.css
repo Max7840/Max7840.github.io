@@ -1,0 +1,22 @@
+.texto {
+    background-color: rgb(29, 192, 178);
+    border-radius: 2em;
+    text-align: center;
+    max-width: 30%;
+    margin: auto;
+}
+
+:any-link {
+    text-decoration: none;
+}
+
+.texto:hover {
+    background-color: rgb(214, 62, 16);
+    transform: skew(-20deg, -2deg);
+    color: grey;
+}
+
+.texto:active {
+    background-color: rgb(90, 143, 10);
+    box-shadow: 5px 5px 10px 0px black;
+}
