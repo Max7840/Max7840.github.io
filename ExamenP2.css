@@ -1,0 +1,90 @@
+nnav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #007bff; /* Azul */
+    overflow: hidden;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    width: calc(20% - 20px); /* Ancho del 20% menos el margen derecho */
+    margin-right: 20px; /* Espacio entre elementos */
+    background-color: #7eb3ec; /* Color de fondo del rectángulo */
+    padding: 10px; /* Espaciado dentro del rectángulo */
+    box-sizing: border-box; /* Incluye el relleno y el borde en el ancho */
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+  }
+  
+  /* Elimina el margen derecho del último elemento */
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-family: Arial, sans-serif; /* Cambio de fuente */
+    font-size: 18px; /* Tamaño de fuente más grande */
+  }
+  
+  /* Cambio de color al pasar el ratón */
+  nav ul li:hover {
+    background-color: #0056b3; /* Tono más oscuro de azul */
+  }
+  
+  /* Estilos para el contenido */
+  section {
+    display: flex; /* Hace que los elementos dentro de la sección se coloquen en línea */
+  }
+  
+  article {
+    flex: 1; /* Hace que el artículo ocupe el espacio disponible */
+  }
+  
+  aside {
+    flex: 0 0 300px; /* Fija un ancho para el aside */
+  }
+  
+  /* Estilos para el formulario de inicio de sesión */
+  aside form {
+    margin-top: 20px; 
+  }
+  
+  aside form input {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  aside form input[type="submit"] {
+    background-color:#0056b3;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  footer{
+    width: 100%;
+    background-color:  #7eb3ec;  
+    text-align: center;
+    font-family: Arial, sans-serif;
+
+
+
+  }
+  aside h1 {
+    background-color: #0056b3; 
+    color: white; 
+    text-align: center;
+    padding: 10px; 
+    margin-bottom: 10px; 
+    border-radius: 5px;
+  }
