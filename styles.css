@@ -1,0 +1,38 @@
+.carousel {
+  position: relative; /* Establece la posición relativa para el contenedor del carrousel */
+  max-width: 600px; /* Establece el ancho máximo del carrousel */
+  margin: auto; /* Centra el carrousel horizontalmente en la página */
+  overflow: hidden; /* Oculta cualquier contenido que se desborde del contenedor */
+}
+
+.carousel-content {
+  display: flex; /* Utiliza un diseño flexible para las imágenes del carrousel */
+}
+
+.carousel-content img {
+  width: 100%; /* Establece que las imágenes ocupen el 100% del ancho del contenedor */
+  display: none; /* Oculta todas las imágenes por defecto */
+}
+
+.carousel-content img.active {
+  display: block; /* Muestra la imagen con la clase 'active' */
+}
+
+button {
+  position: absolute; /* Establece la posición absoluta para los botones de navegación */
+  top: 50%; /* Sitúa los botones en la mitad superior del contenedor */
+  transform: translateY(-50%); /* Centra verticalmente los botones */
+  background: rgba(0, 0, 0, 0.5); /* Establece un fondo semitransparente para los botones */
+  color: white; /* Establece el color del texto de los botones */
+  border: none; /* Elimina los bordes de los botones */
+  padding: 10px; /* Añade relleno a los botones */
+  cursor: pointer; /* Cambia el cursor a un puntero al pasar sobre los botones */
+}
+
+#prevBtn {
+  left: 0; /* Sitúa el botón "anterior" en el extremo izquierdo del contenedor */
+}
+
+#nextBtn {
+  right: 0; /* Sitúa el botón "siguiente" en el extremo derecho del contenedor */
+}
