@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Kitty - No estés awitada</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #fce4ec;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            animation: fadeIn 2s;
+        }
+        .container img {
+            width: 200px;
+            animation: bounce 2s infinite;
+        }
+        .message {
+            margin-top: 20px;
+            font-size: 24px;
+            color: #d81b60;
+            animation: pulse 1.5s infinite;
+        }
+        .header-message {
+            font-size: 20px;
+            color: #d81b60;
+            margin-bottom: 20px;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-30px);
+            }
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header-message">Te traje a Hello Kitty para que no estés awitada</div>
+        <img src="queilita.png" alt="Hello Kitty">
+        <div class="message">No estés awitada Queilita</div>
+    </div>
+</body>
+</html>
